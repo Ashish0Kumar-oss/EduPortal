@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Responsive design for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO description for search engines -->
+    <meta name="description" content="Latest announcements and updates from EduPortal.">
+    <!-- SEO keywords for search engines -->
+    <meta name="keywords" content="announcements, updates, news, school">
+    <!-- Page title shown in browser tab -->
+    <title>Educational Interface - Announcements</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section with logo and navigation -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Website logo/brand name -->
+            <div class="logo">EduPortal</div>
+            <!-- Main navigation menu -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="#features" class="nav__link">Features</a></li>
+                    <li><a href="announcements.html" class="nav__link">Announcements</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Announcements section for latest updates -->
+        <section class="section" id="announcements">
+            <div class="container">
+                <h2 class="section__title">Latest Announcements</h2>
+                <!-- List of announcements -->
+                <div class="announcements">
+                    <div class="announcements__item">
+                        <div class="announcements__date">October 15, 2023</div>
+                        <h3 class="announcements__title">Mid-term Exams Schedule Released</h3>
+                        <p>Check your class page for the detailed exam timetable and preparation guidelines.</p>
+                    </div>
+                    <div class="announcements__item">
+                        <div class="announcements__date">October 10, 2023</div>
+                        <h3 class="announcements__title">New Online Learning Platform</h3>
+                        <p>We're excited to introduce our new interactive learning platform. Access it via the Live Classes section.</p>
+                    </div>
+                    <div class="announcements__item">
+                        <div class="announcements__date">October 5, 2023</div>
+                        <h3 class="announcements__title">Parent-Teacher Meeting</h3>
+                        <p>PTM scheduled for October 25th. Details will be shared with parents via email.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with links and contact form -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content grid -->
+            <div class="footer__content">
+                <!-- Quick links section -->
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="#features" class="footer__link">Features</a></li>
+                        <li><a href="announcements.html" class="footer__link">Announcements</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Classes links section -->
+                <div class="footer__section">
+                    <h3>Classes</h3>
+                    <ul class="footer__links">
+                        <li><a href="class-1.html" class="footer__link">Class 1-5</a></li>
+                        <li><a href="class-6.html" class="footer__link">Class 6-8</a></li>
+                        <li><a href="class-9.html" class="footer__link">Class 9-10</a></li>
+                        <li><a href="class-11.html" class="footer__link">Class 11-12</a></li>
+                    </ul>
+                </div>
+                <!-- Newsletter subscription section -->
+                <div class="footer__section">
+                    <h3>Newsletter</h3>
+                    <!-- Newsletter subscription form -->
+                    <form class="form" method="post" action="#">
+                        <div class="form__group">
+                            <label for="newsletter-email" class="form__label">Subscribe to our newsletter</label>
+                            <input type="email" id="newsletter-email" name="email" class="form__input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+                <!-- Contact form section -->
+                <div class="footer__section" id="contact">
+                    <h3>Contact Us</h3>
+                    <!-- Contact form -->
+                    <form class="form" method="post" action="#">
+                        <div class="form__group">
+                            <label for="contact-name" class="form__label">Name</label>
+                            <input type="text" id="contact-name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-email" class="form__label">Email</label>
+                            <input type="email" id="contact-email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-message" class="form__label">Message</label>
+                            <textarea id="contact-message" name="message" class="form__textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Footer bottom with copyright -->
+            <div class="footer__bottom">
+                <p>&copy; 2023 EduPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!-- Assets Table
+| Asset Name       | Description                          |
+|------------------|--------------------------------------|
+| logo.png         | School logo for header               |
+| teacher1.jpg     | Teacher 1 image (100x100)            |
+| teacher2.jpg     | Teacher 2 image (100x100)            |
+| teacher3.jpg     | Teacher 3 image (100x100)            |
+| teacher4.jpg     | Teacher 4 image (100x100)            |
+| event1.jpg       | Event 1 image (placeholder)          |
+| event2.jpg       | Event 2 image (placeholder)          |
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Responsive design for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO description for search engines -->
+    <meta name="description" content="Educational Interface for Classes 1-12 with subjects, timetables, and resources.">
+    <!-- SEO keywords for search engines -->
+    <meta name="keywords" content="education, classes, subjects, timetable, syllabus, assignments">
+    <!-- Page title shown in browser tab -->
+    <title>Educational Interface - Home</title>
+    <!-- Favicon for browser tab -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <!-- Header section with logo and navigation -->
+    <header class="header">
+        <div class="container header__container">
+            <!-- Website logo/brand name -->
+            <div class="logo">EduPortal</div>
+            <!-- Main navigation menu -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#features" class="nav__link">Features</a></li>
+                    <li><a href="announcements.html" class="nav__link">Announcements</a></li>
+                    <li><a href="login.html" class="nav__link">Login</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Hero section with welcome message -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1 class="hero__title">Welcome to EduPortal</h1>
+                <p class="hero__subtitle">Your gateway to quality education for Classes 1-12. Explore subjects, timetables, and more.</p>
+                <a href="#explore-classes" class="btn">Explore Classes</a>
+            </div>
+        </section>
+
+        <!-- Explore Classes section with icons for classes 1-12 -->
+        <section class="section" id="explore-classes">
+            <div class="container">
+                <h2 class="section__title">Explore Classes</h2>
+                <!-- Grid of class icons -->
+                <div class="classes">
+                    <a href="class-1.html" class="class-icon">
+                        <div class="class-icon__number">1</div>
+                        <div class="class-icon__label">Class 1</div>
+                    </a>
+                    <a href="class-2.html" class="class-icon">
+                        <div class="class-icon__number">2</div>
+                        <div class="class-icon__label">Class 2</div>
+                    </a>
+                    <a href="class-3.html" class="class-icon">
+                        <div class="class-icon__number">3</div>
+                        <div class="class-icon__label">Class 3</div>
+                    </a>
+                    <a href="class-4.html" class="class-icon">
+                        <div class="class-icon__number">4</div>
+                        <div class="class-icon__label">Class 4</div>
+                    </a>
+                    <a href="class-5.html" class="class-icon">
+                        <div class="class-icon__number">5</div>
+                        <div class="class-icon__label">Class 5</div>
+                    </a>
+                    <a href="class-6.html" class="class-icon">
+                        <div class="class-icon__number">6</div>
+                        <div class="class-icon__label">Class 6</div>
+                    </a>
+                    <a href="class-7.html" class="class-icon">
+                        <div class="class-icon__number">7</div>
+                        <div class="class-icon__label">Class 7</div>
+                    </a>
+                    <a href="class-8.html" class="class-icon">
+                        <div class="class-icon__number">8</div>
+                        <div class="class-icon__label">Class 8</div>
+                    </a>
+                    <a href="class-9.html" class="class-icon">
+                        <div class="class-icon__number">9</div>
+                        <div class="class-icon__label">Class 9</div>
+                    </a>
+                    <a href="class-10.html" class="class-icon">
+                        <div class="class-icon__number">10</div>
+                        <div class="class-icon__label">Class 10</div>
+                    </a>
+                    <a href="class-11.html" class="class-icon">
+                        <div class="class-icon__number">11</div>
+                        <div class="class-icon__label">Class 11</div>
+                    </a>
+                    <a href="class-12.html" class="class-icon">
+                        <div class="class-icon__number">12</div>
+                        <div class="class-icon__label">Class 12</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section showcasing platform capabilities -->
+        <section class="section" id="features">
+            <div class="container">
+                <h2 class="section__title">Our Features</h2>
+                <!-- Grid of feature cards -->
+                <div class="features">
+                    <div class="card">
+                        <h3 class="card__title">Comprehensive Subjects</h3>
+                        <p class="card__content">Access detailed subject lists for each class, including Science and Art streams for higher grades.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Timetables</h3>
+                        <p class="card__content">View weekly timetables with periods and subjects for better planning.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Assignments & Resources</h3>
+                        <p class="card__content">Stay updated with assignments, syllabus, and additional learning materials.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Teacher Profiles</h3>
+                        <p class="card__content">Meet your teachers and get to know their expertise.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Live Classes</h3>
+                        <p class="card__content">Join interactive live classes for enhanced learning.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Announcements</h3>
+                        <p class="card__content">Stay informed with the latest school news and updates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Upcoming events section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Upcoming Events</h2>
+                <!-- Grid of event cards -->
+                <div class="events">
+                    <div class="card">
+                        <img src="assets/event1.jpg" alt="Science Fair 2023" class="event__image">
+                        <h3 class="card__title">Science Fair 2023</h3>
+                        <p class="card__content">Join us for an exciting science fair showcasing student projects. Date: November 15-16, 2023.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/event2.jpg" alt="Annual Sports Day" class="event__image">
+                        <h3 class="card__title">Annual Sports Day</h3>
+                        <p class="card__content">Celebrate athletic achievements and team spirit. Date: December 5, 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers section displaying faculty profiles -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Meet Our Teachers</h2>
+                <!-- Grid of teacher profiles -->
+                <div class="teachers">
+                    <div class="teacher">
+                        <img src="assets/teacher1.jpg" alt="Dr. Sarah Johnson - Mathematics" class="teacher__image">
+                        <h3 class="teacher__name">Dr. Sarah Johnson</h3>
+                        <p class="teacher__subject">Mathematics</p>
+                    </div>
+                    <div class="teacher">
+                        <img src="assets/teacher2.jpg" alt="Mr. Michael Chen - Science" class="teacher__image">
+                        <h3 class="teacher__name">Mr. Michael Chen</h3>
+                        <p class="teacher__subject">Science</p>
+                    </div>
+                    <div class="teacher">
+                        <img src="assets/teacher3.jpg" alt="Ms. Emily Davis - English" class="teacher__image">
+                        <h3 class="teacher__name">Ms. Emily Davis</h3>
+                        <p class="teacher__subject">English</p>
+                    </div>
+                    <div class="teacher">
+                        <img src="assets/teacher4.jpg" alt="Mr. David Wilson - History" class="teacher__image">
+                        <h3 class="teacher__name">Mr. David Wilson</h3>
+                        <p class="teacher__subject">History</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section with links and contact form -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content grid -->
+            <div class="footer__content">
+                <!-- Quick links section -->
+                <div class="footer__section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#features" class="footer__link">Features</a></li>
+                        <li><a href="announcements.html" class="footer__link">Announcements</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter subscription section -->
+                <div class="footer__section">
+                    <h3>Newsletter</h3>
+                    <!-- Newsletter subscription form -->
+                    <form class="form" method="post" action="#">
+                        <div class="form__group">
+                            <label for="newsletter-email" class="form__label">Subscribe to our newsletter</label>
+                            <input type="email" id="newsletter-email" name="email" class="form__input" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+                <!-- Contact form section -->
+                <div class="footer__section" id="contact">
+                    <h3>Contact Us</h3>
+                    <!-- Contact form -->
+                    <form class="form" method="post" action="#">
+                        <div class="form__group">
+                            <label for="contact-name" class="form__label">Name</label>
+                            <input type="text" id="contact-name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-email" class="form__label">Email</label>
+                            <input type="email" id="contact-email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="contact-message" class="form__label">Message</label>
+                            <textarea id="contact-message" name="message" class="form__textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Footer bottom with copyright -->
+            <div class="footer__bottom">
+                <p>&copy; 2023 EduPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
